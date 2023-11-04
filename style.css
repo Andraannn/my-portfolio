@@ -182,7 +182,7 @@ nav ul li a:hover::after {
   transform: scale(1.1);
   transition: 0.5s;
 }
-.see-more {
+a.see-more {
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -196,7 +196,7 @@ nav ul li a:hover::after {
   color: #000;
 }
 
-.see-more:hover {
+a.see-more:hover {
   cursor: pointer;
   color: #000;
   background-color: #a0771e;
