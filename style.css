@@ -187,19 +187,20 @@ a.see-more {
   margin: 50px auto;
   width: fit-content;
   border-radius: 10px;
-  border: none;
+  border: solid 1px;
+  border-color: #febd2f;
   font-size: 20px;
   font-weight: 500;
   padding: 20px;
-  background-color: #febd2f;
+  background-color: transparent;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 a.see-more:hover {
   cursor: pointer;
   color: #000;
-  background-color: #a0771e;
+  background-color: #febd2f;
   transition: 0.5s;
   transform: scale(1.1);
 }
@@ -266,10 +267,11 @@ form textarea {
 }
 
 form .btn2 {
-  border: none;
+  border: solid 1px;
+  border-color: #febd2f;
   display: flex;
-  background-color: #febd2f;
-  color: #000;
+  background-color: transparent;
+  color: #fff;
   border-radius: 10px;
   padding: 14px 60px;
   font-size: 18px;
@@ -279,17 +281,18 @@ form .btn2 {
 
 form .btn2:hover {
   color: #000;
-  background-color: #a0771e;
+  background-color: #febd2f;
   transition: 0.5s;
   transform: translateY(-5px);
 }
 
 a.download-button {
-  border: none;
+  border: solid 1px;
+  border-color: #febd2f;
   display: inline-block;
   width: auto;
-  background-color: #febd2f;
-  color: #000;
+  background-color: transparent;
+  color: #fff;
   border-radius: 10px;
   padding: 20px;
   font-size: 18px;
@@ -300,7 +303,7 @@ a.download-button {
 
 a.download-button:hover {
   color: #000;
-  background-color: #a0771e;
+  background-color: #febd2f;
   transition: 0.5s;
   transform: translateY(-5px);
 }
