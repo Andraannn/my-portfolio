@@ -24,7 +24,7 @@
           <i class="material-icons" onclick="openmenu()">dehaze</i>
         </nav>
         <div class="header-text">
-          <p id="typewriter">GRAPHIC DESIGNER</p>
+          <p id="typewriter"></p>
           <h1>Hi, I'm Andrei Gabrielle A. Adlawan</h1>
         </div>
       </div>
@@ -184,11 +184,43 @@
     <div class="copyright">
       <p>Copyright © Andran 2023</p>
     </div>
+    <script>
+      // JavaScript to implement the typewriter effect
+      const textArray = ["GRAPHIC DESIGNER", "WEB DEVELOPER", "UI/UX DESIGNER"];
+      let index = 0;
+      let currentText = "";
+      let letterIndex = 0;
+    
+      function type() {
+        if (letterIndex < textArray[index].length) {
+          currentText += textArray[index].charAt(letterIndex);
+          document.getElementById("typewriter").innerHTML = currentText;
+          letterIndex++;
+          setTimeout(type, 100); // Adjust typing speed (milliseconds)
+        } else {
+          setTimeout(erase, 1200); // Wait before erasing
+        }
+      }
+    
+      function erase() {
+        if (letterIndex > 0) {
+          currentText = textArray[index].substring(0, letterIndex - 1);
+          document.getElementById("typewriter").innerHTML = currentText;
+          letterIndex--;
+          setTimeout(erase, 50); // Adjust erasing speed (milliseconds)
+        } else {
+          index = (index + 1) % textArray.length;
+          setTimeout(type, 500); // Wait before typing the next text
+        }
+      }
+    
+      // Start the typing effect
+      type();
+    </script>
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
     crossorigin="anonymous">
     </script>
     <script>
-
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
 
