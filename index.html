@@ -24,7 +24,7 @@
           <i class="material-icons" onclick="openmenu()">dehaze</i>
         </nav>
         <div class="header-text">
-          <p id="typewriter"></p>
+          <p id="typewriter" class="blink"></p>
           <h1>Hi, I'm Andrei Gabrielle A. Adlawan</h1>
         </div>
       </div>
@@ -203,8 +203,8 @@
       }
     
       function erase() {
-        if (letterIndex > 0) {
-          currentText = textArray[index].substring(0, letterIndex - 1);
+        if (letterIndex >= 0) {
+          currentText = textArray[index].substring(0, letterIndex);
           document.getElementById("typewriter").innerHTML = currentText;
           letterIndex--;
           setTimeout(erase, 50); // Adjust erasing speed (milliseconds)
