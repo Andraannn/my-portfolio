@@ -71,6 +71,10 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 
+.role_effect {
+  color: #a0771e;
+}
+
 /* ABOUT */
 #about {
   padding: 80px 0;
