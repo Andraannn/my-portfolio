@@ -75,6 +75,32 @@ nav ul li a:hover::after {
   color: #a0771e;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 80px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: solid 3px; /* Remove borders */
+  border-color: #a0771e; /* Border color */
+  outline: none; /* Remove outline */
+  background-color: transparent; /* Background color*/
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Rounded corners */
+}
+
+#myBtn:hover {
+  background-color: #805f18; /* Add a dark-grey background on hover */
+  color: #000;
+  transition: 0.5s;
+  border: solid 3px; /* Remove borders */
+  border-color: #805f18; /* Border color */
+}
+
 /* ABOUT */
 #about {
   padding: 80px 0;
