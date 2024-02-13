@@ -25,10 +25,10 @@
         <div class="header-text">
           <h1>Hi, I'm Andrei Gabrielle A. Adlawan</h1>
           <p>I am a <span id="typewriter" class="role_effect"></span></p>
-          <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
         </div>
       </div>
     </div>
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
     <!-- ABOUT PAGE -->
     <div id="about">
       <div class="container">
@@ -296,24 +296,6 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-    </script>
-    <script>
-      // Smooth scrolling
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-
-      // Parallax effect
-      window.addEventListener('scroll', function () {
-        let scrolled = window.scrollY;
-        document.getElementById('header').style.backgroundPosition = 'center ' + (scrolled * 0.5) + 'px';
-      });
     </script>
   </body>
 </html>
