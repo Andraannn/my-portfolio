@@ -366,6 +366,10 @@ nav .material-icons {
 }
 
 @media only screen and (max-width: 600px) {
+  #header {
+    background-attachment: scroll;
+    height: auto;
+  }
   .header-text {
     margin-top: 100%;
     font-size: 16px;
